@@ -1,6 +1,6 @@
 CREATE TABLE Dim_Categoria (
-    id_categoria INT PRIMARY KEY,
-    nombre_categoria VARCHAR(50) NOT NULL
+    id_categoria INT NOT NULL PRIMARY KEY,
+    nombre_categoria VARCHAR(100) NULL
 );
 
 INSERT INTO Dim_Categoria (id_categoria, nombre_categoria) VALUES

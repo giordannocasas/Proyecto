@@ -1,7 +1,7 @@
 CREATE TABLE Dim_Habito (
-    id_habito INT PRIMARY KEY,
-    id_categoria INT,
-    nombre_habito VARCHAR(100),
+    id_habito INT NOT NULL PRIMARY KEY,
+    id_categoria INT NULL,
+    nombre_habito VARCHAR(100) NULL,
     FOREIGN KEY (id_categoria) REFERENCES Dim_Categoria(id_categoria)
 );
 
